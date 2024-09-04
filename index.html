@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/dark.css">
+
+    <title>Calculadora Básica</title>
+</head>
+<body>
+    <h2>Calculadora</h2>
+    <div>
+        <input type="number" id="operand1" placeholder="Operando 1">
+        <input type="number" id="operand2" placeholder="Operando 2">
+    </div>
+    <div>
+        <button onclick="calculate('sum')">+</button>
+        <button onclick="calculate('subtract')">-</button>
+        <button onclick="calculate('multiply')">*</button>
+        <button onclick="calculate('divide')">/</button>
+       
+    </div>
+    <div>
+        <h3>Resultado: <span id="result">0</span></h3>
+        <button onclick="clearResult()">Limpiar</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
